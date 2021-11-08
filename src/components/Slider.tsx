@@ -11,12 +11,9 @@ import { clamp, getValueForPosition, isLowCloser } from './helpers/helpers';
 // Imports: Styles
 import { defaultStyles } from '../../styles/styles';
 
-// Imports: TypeScript Types
-import { TSliderType } from '@jefelewis/unison-types';
-
 // TypeScript Type: Props
 interface IProps {
-  type: TSliderType;
+  type: 'Range' | 'Single';
   min: number;
   max: number;
   step: number;
